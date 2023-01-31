@@ -1,0 +1,27 @@
+.footer{
+    background-color: #222;
+    color: #FFF;
+    padding: 2em;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.list li{
+    margin: 0 1em;
+}
+
+.list li:hover{
+    color: #FFBB33;
+}
+
+.list svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+

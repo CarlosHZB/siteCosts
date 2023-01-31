@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+      "name": "Arte do projeto 15",
+      "budget": "2450",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "name": "Melhorar agilidade de troca de dados",
+      "budget": "7800",
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "name": "Antedegmon",
+      "budget": "8994",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "name": "Alteração do banco de dados",
+      "budget": "3450",
+      "cost": 0,
+      "services": [],
+      "id": 9
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
