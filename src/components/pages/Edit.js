@@ -7,6 +7,7 @@ import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 export default function Edit(){
 
@@ -17,6 +18,8 @@ export default function Edit(){
 
     const [message, setMessage] = useState()
     const [type, setType] = useState()
+
+    const [services, setServices] = useState([])
 
     const [showServiceForm, setShowServiceForm] = useState(false)
 
@@ -30,6 +33,7 @@ export default function Edit(){
         }).then((resp) => resp.json())
         .then((data)=>{
             setPtoject(data)
+            setServices(data.services)
         })
         .catch(err => console.log(err))
     }, [id])
@@ -61,6 +65,7 @@ export default function Edit(){
     }
 
     function createService(project){
+        setMessage('')
         const lastService = project.services[project.services.length -1]
 
         lastService.id = uuidv4()
@@ -77,8 +82,16 @@ export default function Edit(){
         project.cost = newCost
 
         fetch(`http://localhost:5000/projects/${project.id}`,{
-            
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project)
+        }).then(resp => resp.json())
+        .then(data => {
+
         })
+          .catch(err => console.log(err))
 
     }
 
@@ -88,6 +101,10 @@ export default function Edit(){
 
     function toggleServiceForm(){
         setShowServiceForm(!showServiceForm)
+    }
+
+    function removeService(){
+
     }
 
     return (
@@ -136,7 +153,19 @@ export default function Edit(){
                 </div>
                 <h2>Serviços</h2>
                 <Container customClass="start">
-                    <p>Ítens de Serviços</p>
+                    {services.length > 0 &&
+                        services.map((service) => (
+                            <ServiceCard 
+                                id={service.id}
+                                name={service.name}
+                                cost={service.cost}
+                                description={service.description}
+                                key={service.id}
+                                handleRemove={removeService}
+                            />
+                        ))
+                    }
+                    {services.length === 0 && <p>Não há serviços cadastrados</p>}
                 </Container>
             </Container>
              </div>

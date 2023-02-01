@@ -29,8 +29,21 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1000,
+      "services": [
+        {
+          "name": "Pintar de rosa",
+          "cost": "500",
+          "description": "Tinta rosa",
+          "id": "ce7c4b9f-af06-4a8c-9e1c-0543aaad7d6c"
+        },
+        {
+          "name": "Pintar de rosa 2",
+          "cost": "500",
+          "description": "Tinta rosa",
+          "id": "69916d52-6749-4aa2-bdc7-70952511ff54"
+        }
+      ],
       "id": 8
     },
     {
