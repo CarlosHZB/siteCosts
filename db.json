@@ -16,7 +16,7 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "name": "Melhorar agilidade de troca de dados",
+      "name": "Melhorar alguma coisa",
       "budget": "7800",
       "cost": 0,
       "services": [],
@@ -24,12 +24,12 @@
     },
     {
       "name": "Antedegmon",
-      "budget": "8994",
+      "budget": "800000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "cost": 1000,
+      "cost": 1500,
       "services": [
         {
           "name": "Pintar de rosa",
@@ -42,6 +42,18 @@
           "cost": "500",
           "description": "Tinta rosa",
           "id": "69916d52-6749-4aa2-bdc7-70952511ff54"
+        },
+        {
+          "name": "Agitar bebida do Cláudio",
+          "cost": "250",
+          "description": "Pegar o suco dele e jogar no chão",
+          "id": "df0c49b0-66f9-4184-907e-d1b74a9bd3a0"
+        },
+        {
+          "name": "Pegar a bebida do cláudio",
+          "cost": "250",
+          "description": "Pegar a bebida que jogamos no chão",
+          "id": "38c34fd2-9597-4614-9ddf-d47732b56549"
         }
       ],
       "id": 8
@@ -56,6 +68,28 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "name": "Roger Flores",
+      "budget": "2345",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "name": "Opa",
+      "budget": "2445",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 11
     }
   ],
   "categories": [
