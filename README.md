@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Projeto de site para gerenciamento de projetos de uma empresa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto em questão foi desenvolvido para estudo de React.
 
 ## Available Scripts
 
